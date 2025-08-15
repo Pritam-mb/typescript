@@ -6,7 +6,7 @@ name =name.toUpperCase()
  //number
 //  let num: number = 5556.2;
  let num = 3325.2;
-//  numstr = num.toLocaleString();
+// numstr = num.toLocaleString();
  console.log(num);
 
  //boolean
@@ -17,7 +17,7 @@ name =name.toUpperCase()
   let hero:string;
 
   let gethero =()=>{
-    return "kolkata"
+    return  "kolkata"
   }
  
   hero = gethero()
