@@ -28,7 +28,7 @@ sum(6)
 console.log(sum(7));
 
 const marvel =["iron","captain","thor"]
-marvel.map((hero): void => 
+marvel.map((hero): void => //void means no return type
     console.log(hero)
     // ${hero}
 )
