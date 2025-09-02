@@ -17,4 +17,12 @@ hero.push({
 
 console.log(hero);
 
+
 superhero.push('spiderman')
+
+let alluser :user[]=[]
+
+const mlmodels: number[][]=[]
+mlmodels.push([255,255,255])
+
+export{};
