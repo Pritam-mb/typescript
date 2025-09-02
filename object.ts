@@ -25,4 +25,46 @@ function profile(user: User):User{
 }
 
 console.log(profile({name :"pritam", age: 19, isloged: true}))
+
+type customer ={
+    readonly _id : string,
+    name: string,
+    email: string,
+    isactive: boolean
+    creditcard ?: number // optional
+}
+
+let mycustomer: customer={
+    _id: "1245",
+    name: "gp morgan",
+    email: "kolkata@email.com",
+    isactive: false
+}
+
+// mycustomer._id = "5478"  readonly
+mycustomer.email = "lola@gmail.com"
+console.log(mycustomer);
+
+
+//inheritence
+
+type cardate ={
+    cardate: string
+}
+type carname ={
+    carname: string
+}
+type cardetails = cardate & carname &{
+    price: number,
+    carno : number
+}
+
+let mycar: cardetails={
+    cardate: "2020",
+    carname: "bmw",
+    price: 999999,
+    carno: 1245
+}
+console.log(mycar);
+
 export{}

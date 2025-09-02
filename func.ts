@@ -34,7 +34,7 @@ marvel.map((hero): void => //void means no return type
 )
 
 function error(val:string = 'kola'):never{
-    throw new Error(val);
+    throw new Error(val);  // never means function will never complete
 }
 // error('')
 
