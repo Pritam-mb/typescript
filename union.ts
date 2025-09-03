@@ -38,6 +38,6 @@ seatallot="st" // only these 3 values are allowed
 let tuple : [string ,number , boolean] 
 tuple=["pritam",19,true]
 
-type user=[string, number]
-let newuser : user =["tukun",5]
+type User=[string, number]
+let newuser : User =["tukun",5]
 // newuser.push()
