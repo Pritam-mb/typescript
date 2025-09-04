@@ -24,7 +24,7 @@ const prathamesh: admin ={
     stratrail : ()=>{
         return "kalua"
     },
-    getcoupun :(name: " pritam", val :5)=>{
+    getcoupun :(name: " pritam", val :5):string=>{
         return `${name}`
     }
 }
