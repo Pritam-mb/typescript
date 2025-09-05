@@ -51,6 +51,9 @@ protected  coursecontent =1  // protected means u can use private in any class w
 }
 
 class subuser extends user {
+   
+
+    
      changecoursecount (){
         // isfamily: boolean = true
         this.coursecontent=4
@@ -58,3 +61,4 @@ class subuser extends user {
 }
 const pritam= new user ( "pritam","paglu@gmail.com")
 // pritam.city="kolkata" // cannot access bec it is private
+
