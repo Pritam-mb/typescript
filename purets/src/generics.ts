@@ -28,3 +28,32 @@ identifyfour<bootle>({
     size: "big",
     capacity: 50
 })
+
+// function searchproducts<Type>(user:Type[] ):Type|undefined{
+//     let index=3
+//     return user[index]
+
+// }
+// searchproducts(["pritam","kolu","sonu"])
+
+// const serachuser =<T>(Products: Array<T>):T|undefined=>{
+//     return Products[2]
+// }
+
+// serachuser([1,2,3])
+
+interface database{
+    name: String,
+    email: String,
+    no : Number
+}
+function manush<T, U extends database>(valone : T , valtwo : U):object{
+    return{
+        valone,
+        valtwo
+    }
+    
+}
+
+manush(3,{name:"pritam", email: "pp@gmail.com",no:5})
+
