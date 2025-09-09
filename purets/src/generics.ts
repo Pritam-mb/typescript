@@ -57,3 +57,15 @@ function manush<T, U extends database>(valone : T , valtwo : U):object{
 
 manush(3,{name:"pritam", email: "pp@gmail.com",no:5})
 
+interface quiz{name: string,
+    author : string,
+    subject: string
+
+}
+class sellable<T>{
+    public cart:T[] =[];
+    addtocart(product: T){
+        this.cart.push(product)
+    }
+}
+
