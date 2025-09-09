@@ -69,3 +69,28 @@ class sellable<T>{
     }
 }
 
+function detectype(val: number | string){
+    if(typeof val === "string"){
+        
+        console.log(val.toUpperCase());
+        return
+    }
+    return val + 3;
+}
+detectype(5)
+
+function printall(str : string | string[]| null){
+    if(str){
+        if(typeof str === "object"){
+            for(const s of str){
+                console.log(s);
+                
+            }
+        }else if(typeof  str === "string"){
+            console.log(str);
+            
+        }
+    }
+}
+
+console.log(printall("pritam"));
