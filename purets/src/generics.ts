@@ -94,3 +94,82 @@ function printall(str : string | string[]| null){
 }
 
 console.log(printall("pritam"));
+
+//instance
+function logvalue(x: Date | string){
+    if(x instanceof Date){
+        console.log(x.toUTCString());
+        
+    }
+    else{
+        console.log(x.toUpperCase());
+        
+    }
+}
+
+logvalue(new Date())
+
+
+
+type Fish ={
+    swim: ()=> void
+
+};
+type Bird= {
+    fly: ()=> void
+};
+
+function isfish(pet: Fish | Bird):pet is Fish{
+    // console.log("fish");
+    return (pet as Fish).swim !== undefined
+    
+}
+
+function getfood(pet: Fish | Bird){
+        if (isfish(pet)){
+            pet
+            return "fish food"
+        }else{
+            pet 
+            return "bird food"
+        }
+}
+
+
+// interface rectangle{
+//     kind : "rectangle",
+//     length : number,
+//     width: number
+// }
+
+// interface circle{
+//     kind : "circle",
+//     length : number,
+//     // width: number
+// }
+
+// function gettrueshape(shape : rectangle | circle){
+//     if (shape.kind=== "circle"){
+//         return Math.PI *  shape.length **2
+//     }
+//     else{
+//         return shape.length * shape.width
+//     }
+// }
+
+//  console.log(
+
+//      gettrueshape({
+//        kind : "circle",
+//        length: 5
+//    })
+
+//  );
+// console.log(
+
+//     gettrueshape({
+//        kind : "rectangle",
+//        length: 5,
+//        width: 4
+//     })
+// );
